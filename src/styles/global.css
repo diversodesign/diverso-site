@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_28pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_28pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_28pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_28pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  /* Primary Colors */
+  --color-primary-white: #ffffff;
+  --color-primary-night: #151515;
+  --color-primary-gray: #f4f4f4;
+  /* Accent Colors */
+  --color-accent-pink: #de48a1;
+  --color-accent-yellow: #fcfd5a;
+  --color-accent-blue: #89d0f0;
+  /* Pastel Colors */
+  --color-pastel-pink: #f6cbe4;
+  --color-pastel-yellow: #fdfd96;
+}
+
+/* Reset styles to ensure consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic html and body settings */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rrem;
+  font-weight: 400;
+  color: var(--color-primary-night);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Link styles */
+a {
+  color: #007bff; /* Primary color for links */
+  text-decoration: none; /* Removes underline */
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline; /* Add underline on hover/focus for accessibility */
+}
+
+/* Image and media responsiveness */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Typography adjustments for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 3.052rem;
+  letter-spacing: -0.075rem;
+}
+@media (min-width: 993px) {
+  h1 {
+    font-size: 3.815rem;
+  }
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+@media (min-width: 993px) {
+  h2 {
+    font-size: 3.052rem;
+  }
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+@media (min-width: 993px) {
+  h3 {
+    font-size: 2.441rem;
+  }
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+@media (min-width: 993px) {
+  h4 {
+    font-size: 1.953rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+@media (min-width: 993px) {
+  h5 {
+    font-size: 1.563rem;
+  }
+}
+
+h6 {
+  font-size: 1.125rem;
+}
+@media (min-width: 993px) {
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Utility classes */
+.padding-global {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 993px) {
+  .padding-global {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.section-padding_large {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media (min-width: 993px) {
+  .section-padding_large {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none !important;
+}/*# sourceMappingURL=global.css.map */
